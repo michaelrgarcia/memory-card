@@ -18,7 +18,7 @@ function Game() {
   const [catPics, setCatPics] = useState([]);
   const [scoreboard, setScoreboard] = useState({ score: 0, best: 0 });
 
-  const numOfCards = 3; // strict mode off : 6
+  const numOfCards = 6; // strict mode off : 6
   const catCards = catPics.map((url, index) => {
     return (
       <button
