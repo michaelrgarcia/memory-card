@@ -10,6 +10,7 @@
 
 .refresh {
    font-size: 0.8em;
+   max-width: 150px;
 }
 
 header {
