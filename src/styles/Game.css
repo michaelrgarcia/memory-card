@@ -1,3 +1,11 @@
+.loading {
+  font-size: 2.5em;
+
+  animation-name: waver;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -25,13 +33,47 @@ h1 {
   border-right: 1px solid;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  margin-top: 50px;
+}
+
+main > button {
+  min-width: 250px;
+  min-height: 250px;
+}
+
 @media only screen and (min-width: 950px) {
   header {
     justify-content: space-around;
     flex-direction: row;
+
+    margin-top: -100px;
   }
 
   h1 {
     font-size: 2em;
+  }
+
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    max-width: 950px;
+  }
+}
+
+@keyframes waver {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
   }
 }
