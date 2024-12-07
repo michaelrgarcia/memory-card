@@ -8,6 +8,10 @@
   animation-iteration-count: infinite;
 }
 
+.refresh {
+   font-size: 0.8em;
+}
+
 header {
   display: flex;
   align-items: center;
