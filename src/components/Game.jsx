@@ -47,7 +47,12 @@ function Game() {
   }, []);
 
   if (catPics.length !== 6) {
-    return <p className="loading">Loading...</p>;
+    return (
+      <>
+        <p className="loading">Loading...</p>
+        <p>If the game is taking too long to load, please refresh the page.</p>
+      </>
+    );
   }
 
   return (
