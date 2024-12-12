@@ -3,7 +3,6 @@ import "../styles/Game.css";
 import Card from "./Card";
 
 function Header({ scoreboard }) {
-  // will put best score in localStorage eventually
   const { score, best } = scoreboard;
 
   return (
@@ -114,7 +113,7 @@ function Game() {
     localStorage.setItem("best-score", score);
   }
 
-  if (score === 0 && catPics.length !== 6) {
+  if (catPics.length !== 6) {
     return (
       <>
         <p className="loading">Loading...</p>
