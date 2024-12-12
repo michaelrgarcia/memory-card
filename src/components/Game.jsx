@@ -43,7 +43,7 @@ function Game() {
   });
 
   const { score, best } = scoreboard;
-  const numOfCards = 3; // strict mode off : 6
+  const numOfCards = 6; // strict mode off : 6
 
   function checkCard(cardIndex) {
     const selectedCard = catPics[cardIndex];
