@@ -32,15 +32,7 @@ function shufflePics(pics) {
 }
 
 function resetPicClicks(pics) {
-  const picsCopy = [...pics];
-
-  for (let i = 0; i < picsCopy.length; i++) {
-    const currentPic = picsCopy[i];
-
-    currentPic.clicked = false;
-  }
-
-  return picsCopy;
+  return pics.map((pic) => ({ ...pic, clicked: false }));
 }
 
 function Game() {
