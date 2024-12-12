@@ -118,7 +118,9 @@ function Game() {
     return (
       <>
         <p className="loading">Loading...</p>
-        <p>If the game is taking too long to load, please refresh the page.</p>
+        <p className="refresh">
+          If the game is taking too long to load, please refresh the page.
+        </p>
       </>
     );
   }
